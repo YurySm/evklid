@@ -1,0 +1,134 @@
+.btn {
+    display: block;
+    width: 279px;
+    height: 78px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 78px;
+    text-align: center;
+    color: #fff;
+    background-color: $hover-color;
+    &:hover {
+        background-color: rgb(255, 177, 60);
+    }
+    &:focus {
+        background-color: rgb(255, 177, 60);
+    }
+    &:active {
+        background-color: $active-color;
+    }
+    &_details {
+        margin-right: 32px;
+        width: 175px;
+        height: 60px;
+        font-size: 16px;
+        line-height: 60px;
+    }
+    &_contract {
+        width: 147px;
+        height: 60px;        
+        border: 1px solid #333333;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333333;
+        background-color: transparent;
+        &:hover {
+            background-color: #666666;
+            color: #fff;
+            border: none;
+        }
+        &:focus {
+            border: none;
+            color: #fff;
+            background-color: #666;
+            
+        }
+        &:active {
+            border: none;
+            color: #fff;
+            background-color: #000;
+        }
+        
+    }
+    &-tab-item {
+        outline: 2px solid transparent;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;      
+        background: transparent;
+        &:hover {
+            color: $hover-color;
+        }
+        &:active {
+            color: $active-color;
+        }
+        &:focus {
+            outline:2px solid $hover-color;
+        }
+        &_active {
+            color: $active-color;
+        }
+    }
+    &-questions {
+        position: relative;
+        display: block;
+        padding: 40px 0;
+        margin-top: -1px;
+        width: 100%;
+        min-height: 112px;  
+        border-top: 1px solid #CACACA;
+        border-bottom: 1px solid #CACACA; 
+        z-index: 0;      
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: left;
+        background: transparent;                            
+        &:hover {
+            margin-bottom: 0;
+            z-index: 1;
+            border-color: $hover-color;
+            color: $hover-color;
+            &~.questions__trigger {
+                background: $hover-color;
+                span {
+                    background: #fff;
+                }
+            }
+        }
+        &:focus {
+            border-color: $hover-color;
+            color: $hover-color;
+            &~.questions__trigger {
+                background: $hover-color;
+                span {
+                    background: #fff;
+                }
+            }                   
+        }
+        &:active {
+            border-color: #CACACA;
+            color: #333;
+            &~.questions__trigger {
+                background: #ececec;
+                transition: rotate .3s;
+                span {
+                    background: #666;
+                    transform: translate(-50%) rotate(45deg);
+                    &:last-child {
+                        transform: translate(-50%) rotate(135deg);
+                    }
+                }
+            } 
+        }
+    }
+    &_footer-form {
+        display: inline-block;
+        margin-right: 19px;
+        width: 269px;
+        height: 58px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,87 @@
+.header {
+    height: 100px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .humburger {
+        display: none;
+        flex-direction: column;
+        background: none;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin-bottom: 7px;
+            background-color: #000;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__logo {
+        img {
+            width: 223px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__nav {
+        &-items {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &-item {
+            margin-right: 79px;
+            font-size: 18px;
+            line-height: 22px;
+            a {
+                height: 100%;
+                display: block;
+                border-bottom: 3px solid transparent;
+                outline: 1px solid transparent;
+                font-weight: 600;
+                &:hover {
+                    border-bottom: 3px solid $hover-color;
+                }
+                &:focus {
+                    outline-color: $hover-color;
+                }
+                &:active {
+                    outline: unset;
+                    border-bottom: 2px solid $active-color;
+                    color: $active-color;   
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__search {
+        margin-left: 82px;
+        width: 25px;
+        height: 25px;
+        outline: 2px solid transparent;
+        cursor: pointer;
+        background: unset;
+        &:hover {
+            svg {
+                path {
+                    stroke: $hover-color;
+                }
+                rect {
+                    fill: $hover-color;
+                }
+            }
+        }
+        &:focus {
+            outline-color: $hover-color;                
+        }
+    }
+}

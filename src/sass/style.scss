@@ -1,0 +1,39 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import 'libs/style_my_normolize.css';
+@import 'blocks/slick';
+@import 'blocks/slick-theme';
+@import 'base/variables';
+@import 'blocks/fonts';
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+    transition-property: background-color, color, fill, stroke, border-color, outline;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1770px;
+    
+}
+.title {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+}
+.db {
+    display: block !important;
+}
+
+@import 'blocks/btns';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/working';
+@import 'blocks/questions';
+@import 'blocks/footer';
+
+@import 'blocks/media';

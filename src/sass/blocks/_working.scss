@@ -1,0 +1,43 @@
+.working {
+    margin-top: 100px;
+    &__tabs {
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        &-item {
+            margin-right: 86px;
+        }
+    }
+    &__content {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        &-wrapper {
+            margin-right: 142px;
+            width: 758px;
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &-descr {
+            margin-top: 8px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 32px;
+        }
+        &-btns {
+            margin-top: 50px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        &-img {
+            margin-top: 3px;
+            width: 870px;
+            min-height: 460px;
+            object-fit: cover;
+        }
+    }
+}

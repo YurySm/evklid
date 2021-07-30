@@ -89,6 +89,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('oh');
       }
     });
+    document.addEventListener('keydown', (e) => {
+      if(e.key === "Escape") {
+        humburger.classList.remove('close');
+        document.body.classList.remove('oh');
+        menu.classList.remove('fade');
+        menu.classList.add('fadeOut');
+        setTimeout(() => {
+          menu.classList.remove('header__nav-active');
+        },800);
+      }
+    })
 
     
 });

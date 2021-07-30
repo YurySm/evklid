@@ -24,6 +24,9 @@
             }
         }
         &.close {
+            height: 50px;
+            width: 30px;
+            padding: 22px 0px;
             span {
                 display: block;
                 width: 30px;
@@ -44,6 +47,7 @@
         } 
     }
     &__logo {
+        z-index: 10000;
         img {
             width: 223px;
         }

@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //mob menu
     const humburger = document.querySelector('.humburger'),
           menu      = document.querySelector('.header__nav'),
-          menuItems = menu.querySelectorAll('.header__nav-item');
+          menuItems = document.querySelectorAll('.header__nav-item');
 
     humburger.addEventListener('click', () => {      
       if(humburger.classList.contains('close')) {
@@ -89,6 +89,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('oh');
       }
     });
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+          humburger.classList.remove('close');
+          document.body.classList.remove('oh');
+          menu.classList.remove('fade');
+          menu.classList.add('fadeOut');
+          setTimeout(() => {
+            menu.classList.remove('header__nav-active');
+          },800);
+      });
+    });
     document.addEventListener('keydown', (e) => {
       if(e.key === "Escape") {
         humburger.classList.remove('close');
@@ -99,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
           menu.classList.remove('header__nav-active');
         },800);
       }
-    })
+    });
 
     
 });

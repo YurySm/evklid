@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
           });
           btn.classList.add('btn-tab-item_active');
           tabContents[i].style.display = 'flex';
-        });
+          tabContents[i].classList.add('fade');
+          });
       });
       tabBtns[0].click();
     };
@@ -53,11 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
           if(e.target) {
             if (!btn.classList.contains('act')) {
               btn.classList.add('act');
-              btn.nextElementSibling.classList.add('db');
+              btn.nextElementSibling.classList.add('db', 'fade');
               btn.parentElement.querySelector('.questions__trigger').classList.add('questions__trigger_active');
             } else {
               btn.classList.remove('act');
-              btn.nextElementSibling.classList.remove('db');
+              btn.nextElementSibling.classList.remove('db', 'fade');
               btn.parentElement.querySelector('.questions__trigger').classList.remove('questions__trigger_active');
             }
           } 
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.remove('oh');
         setTimeout(() => {
           menu.classList.remove('header__nav-active');
-        },1500);
+        },800);
       } else {
         humburger.classList.add('close');
         menu.classList.add('header__nav-active');

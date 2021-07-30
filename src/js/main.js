@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('oh');
       }
     });
+    
     menuItems.forEach(item => {
       item.addEventListener('click', () => {
           humburger.classList.remove('close');
@@ -100,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
           },800);
       });
     });
+
     document.addEventListener('keydown', (e) => {
       if(e.key === "Escape") {
         humburger.classList.remove('close');

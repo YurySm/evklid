@@ -100,6 +100,8 @@
         &:focus {
             border-color: $hover-color;
             color: $hover-color;
+            margin-bottom: 0;
+            z-index: 1;
             &~.questions__trigger {
                 background: $hover-color;
                 span {
@@ -110,6 +112,8 @@
         &:active {
             border-color: #CACACA;
             color: #333;
+            margin-bottom: 0;
+            z-index: 1;
             &~.questions__trigger {
                 background: #ececec;
                 transition: rotate .3s;
